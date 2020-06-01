@@ -597,6 +597,7 @@ namespace AniPlayable.InstanceAnimation
             float speed = playSpeed * speedParameter;
             curFrame += speed * Time.deltaTime * aniInfo[aniIndex].fps;
             int totalFrame = aniInfo[aniIndex].totalFrame;
+            curProcess = Mathf.Clamp01(curFrame / totalFrame);
             switch (wrapMode)
             {
                 case WrapMode.Loop:
@@ -604,7 +605,10 @@ namespace AniPlayable.InstanceAnimation
                         if (curFrame < 0f)
                             curFrame += (totalFrame - 1);
                         else if (curFrame > totalFrame - 1)
+                        {
+                            curProcess = 1;
                             curFrame -= (totalFrame - 1);
+                        } 
                         break;
                     }
                 case WrapMode.PingPong:
@@ -618,6 +622,7 @@ namespace AniPlayable.InstanceAnimation
                         {
                             speedParameter = -Mathf.Abs(speedParameter);
                             curFrame = 2 * (totalFrame - 1) - curFrame;
+                            curProcess = 1;
                         }
                         break;
                     }
@@ -627,6 +632,7 @@ namespace AniPlayable.InstanceAnimation
                         if (curFrame < 0f || curFrame > totalFrame - 1.0f)
                         {
                             Pause();
+                            curProcess = 1;
                         }
                         break;
                     }
@@ -647,8 +653,7 @@ namespace AniPlayable.InstanceAnimation
         {
             if (cureState == null || cureState.motionIndex != aniIndex) return;
             AnimationInfo info = aniInfo[aniIndex];
-            curProcess = Mathf.Clamp01(curFrame / info.totalFrame);
-
+            
             var ttrans = cureState.CheckTransition(curProcess);
             if (ttrans != null)
             {

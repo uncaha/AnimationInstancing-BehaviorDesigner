@@ -31,7 +31,6 @@ namespace BehaviorDesigner.Runtime.Tasks.AniInstancing
                 Debug.LogWarning("AnimationInstancing is null");
                 return TaskStatus.Failure;
             }
-
             if(animator.curProcess < processPart.Value) return TaskStatus.Running;
 
             return TaskStatus.Success;
