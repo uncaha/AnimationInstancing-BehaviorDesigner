@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1895671443273579838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895671443273579839}
+  - component: {fileID: 1895671443262825636}
+  m_Layer: 0
+  m_Name: pgui
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895671443273579839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895671443273579838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6860235592184869389}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895671443262825636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895671443273579838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 1
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: "{\n\t\"EntryTask\":{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.EntryTask\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(-592.1227,-52.1270142)\"\n\t\t},\n\t\t\"ID\":0,\n\t\t\"Name\":\"Entry\",\n\t\t\"Instant\":true\n\t},\n\t\"RootTask\":{\n\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Selector\",\n\t\t\"NodeData\":{\n\t\t\t\"Offset\":\"(0.759042263,141.431946)\"\n\t\t},\n\t\t\"ID\":1,\n\t\t\"Name\":\"Selector\",\n\t\t\"Instant\":true,\n\t\t\"AbortTypeabortType\":\"None\",\n\t\t\"Children\":[{\n\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.Sequence\",\n\t\t\t\"NodeData\":{\n\t\t\t\t\"Offset\":\"(-0.16849184,166.0046)\"\n\t\t\t},\n\t\t\t\"ID\":2,\n\t\t\t\"Name\":\"Sequence\",\n\t\t\t\"Instant\":true,\n\t\t\t\"AbortTypeabortType\":\"None\",\n\t\t\t\"Children\":[{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.AniInstancing.Crossfade\",\n\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\"Offset\":\"(-176.069214,166.813141)\"\n\t\t\t\t},\n\t\t\t\t\"ID\":3,\n\t\t\t\t\"Name\":\"Crossfade\",\n\t\t\t\t\"Instant\":true,\n\t\t\t\t\"SharedGameObjecttargetGameObject\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\"Name\":null\n\t\t\t\t},\n\t\t\t\t\"SharedStringstateName\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"StringmValue\":\"ani1\"\n\t\t\t\t},\n\t\t\t\t\"WrapModewrapMode\":\"Loop\",\n\t\t\t\t\"SharedFloattransitionDuration\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t},\n\t\t\t\t\"Int32layer\":-1\n\t\t\t},{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.AniInstancing.WaitProcessPart\",\n\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\"Offset\":\"(-0.4281006,171.6517)\"\n\t\t\t\t},\n\t\t\t\t\"ID\":4,\n\t\t\t\t\"Name\":\"Wait
+        Process Part\",\n\t\t\t\t\"Instant\":true,\n\t\t\t\t\"SharedGameObjecttargetGameObject\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\"Name\":null\n\t\t\t\t},\n\t\t\t\t\"SharedFloatprocessPart\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"SinglemValue\":0.9\n\t\t\t\t}\n\t\t\t},{\n\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.Tasks.AniInstancing.Crossfade\",\n\t\t\t\t\"NodeData\":{\n\t\t\t\t\t\"Offset\":\"(199.930786,169.813141)\"\n\t\t\t\t},\n\t\t\t\t\"ID\":5,\n\t\t\t\t\"Name\":\"Crossfade\",\n\t\t\t\t\"Instant\":true,\n\t\t\t\t\"SharedGameObjecttargetGameObject\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedGameObject\",\n\t\t\t\t\t\"Name\":null\n\t\t\t\t},\n\t\t\t\t\"SharedStringstateName\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedString\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"StringmValue\":\"an2\"\n\t\t\t\t},\n\t\t\t\t\"WrapModewrapMode\":\"PingPong\",\n\t\t\t\t\"SharedFloattransitionDuration\":{\n\t\t\t\t\t\"Type\":\"BehaviorDesigner.Runtime.SharedFloat\",\n\t\t\t\t\t\"Name\":null,\n\t\t\t\t\t\"SinglemValue\":0\n\t\t\t\t},\n\t\t\t\t\"Int32layer\":-1\n\t\t\t}]\n\t\t}]\n\t}\n}"
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.6.1
+--- !u!114 &1895671442861696942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597337500905717790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14026134e0bc44b6f9f655530d185063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aniFilename: testbuilda2
+  playSpeed: 1
+  shadowCastingMode: 1
+  receiveShadow: 1
+  applyRootMotion: 0
+  autoPlay: 0
+  defaultState: 
+  bonePerVertex: 1
+--- !u!1001 &1895671442183428375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1895671443273579839}
+    m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9020f251cadbf447da858f86eefae457, type: 2}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Name
+      value: AdeliePenguin_FBX
+      objectReference: {fileID: 0}
+    - target: {fileID: 3757439864868869798, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3757439864868869798, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f631134c7edee4ae6ac2c1d661128a73, type: 2}
+    - target: {fileID: 3757439864868869798, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f631134c7edee4ae6ac2c1d661128a73, type: 2}
+    - target: {fileID: 3757439864868869798, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f631134c7edee4ae6ac2c1d661128a73, type: 2}
+    - target: {fileID: 3757439864868869798, guid: e0e73a3451df241f085392ce7d597e3b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0e73a3451df241f085392ce7d597e3b, type: 3}
+--- !u!1 &7597337500905717790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e0e73a3451df241f085392ce7d597e3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895671442183428375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6860235592184869389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e0e73a3451df241f085392ce7d597e3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1895671442183428375}
+  m_PrefabAsset: {fileID: 0}
