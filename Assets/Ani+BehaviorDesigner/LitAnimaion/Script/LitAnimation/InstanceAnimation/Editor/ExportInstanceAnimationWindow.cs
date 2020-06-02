@@ -12,7 +12,7 @@ namespace AniPlayable.InstanceAnimation
     public class ExportInstanceAnimationWindow : EditorWindow
     {
         static ExportInstanceAnimationWindow sWindow;
-        [MenuItem("AnimatorTool/AnimationInstancingGenerator", false)]
+        [MenuItem("Tools/AnimatorTool/AnimationInstancingGenerator", false)]
         static void MakeWindow()
         {
             sWindow = GetWindow(typeof(ExportInstanceAnimationWindow)) as ExportInstanceAnimationWindow;

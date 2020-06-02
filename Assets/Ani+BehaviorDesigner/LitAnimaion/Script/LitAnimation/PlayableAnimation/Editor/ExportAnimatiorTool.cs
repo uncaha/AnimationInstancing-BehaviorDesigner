@@ -11,7 +11,7 @@ namespace AniPlayable
         private string selectPath = "";
 
         static ExportAnimatiorTool sWindow;
-        [MenuItem("AnimatorTool/AnimatorToAsset")]
+        [MenuItem("Tools/AnimatorTool/AnimatorToAsset")]
         static void CreateWindow()
         {
             if (sWindow == null)
