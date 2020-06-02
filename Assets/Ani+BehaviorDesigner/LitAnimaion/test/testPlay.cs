@@ -6,16 +6,27 @@ public class testPlay : MonoBehaviour
 {
     public int count = 1000;
     public GameObject pfb;
+    public GameObject animatorPfb;
+    public bool useInstancing = true;
    // public AniPlayable.InstanceAnimation.AnimationInstancing animator; 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject usepfb = null;
+        if(useInstancing)
+        {
+            usepfb = pfb;
+        }
+        else
+        {
+            usepfb = animatorPfb;
+        }
         Vector3 tpos = Vector3.zero;
         int tstep = 1;
         int tmaxline = (int)System.Math.Sqrt((double)count);
         for (int i = 0,j = 0,k = 0; i < count; i++)
         {
-            GameObject tobj = GameObject.Instantiate(pfb);
+            GameObject tobj = GameObject.Instantiate(usepfb);
             tobj.transform.position = new Vector3(j * tstep,0,k * tstep);
             j++;
             if(j >= tmaxline)
